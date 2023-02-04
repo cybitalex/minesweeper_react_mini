@@ -4,6 +4,7 @@ import Cell from "./Cell";
 import { revealed } from "../utils/Reveal";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { click } from "@testing-library/user-event/dist/click";
+import Timer from "./Timer";
 
 
 function Board() {
@@ -75,9 +76,10 @@ function Board() {
         <div className="parent">
             <div style={{color:"white",textAlign:"center",fontSize:"35px"}}>Non-Mines : {nonMinecount}</div>
             <div>
+                {/* <Timer /> */}
                <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Dropdown Button
+                        Difficulties
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
