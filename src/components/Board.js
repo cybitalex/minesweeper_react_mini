@@ -4,7 +4,7 @@ import Cell from "./Cell";
 import { revealed } from "../utils/Reveal";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { click } from "@testing-library/user-event/dist/click";
-import Timer from "./Timer";
+import SignUp from "./Form";
 
 
 function Board() {
@@ -77,6 +77,7 @@ function Board() {
             <div style={{color:"white",textAlign:"center",fontSize:"35px"}}>Non-Mines : {nonMinecount}</div>
             <div>
                 {/* <Timer /> */}
+                <SignUp />
                <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                         Difficulties
